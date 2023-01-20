@@ -1,0 +1,9 @@
+{
+	"name": "matiasdb",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ab27869c-a01b-428f-8d6e-5bada9d2893f",
+		"tenantId": "3048dc87-43f0-4100-9acb-ae1971c79395"
+	}
+}
