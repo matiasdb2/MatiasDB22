@@ -1,0 +1,48 @@
+{
+	"name": "entrada_peliculas",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageClaseDF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ClaseDF"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "peliculas.csv",
+				"folderPath": "Origen",
+				"fileSystem": "clasedf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "peli_id",
+				"type": "String"
+			},
+			{
+				"name": "titulo",
+				"type": "String"
+			},
+			{
+				"name": "fecha_estreno",
+				"type": "String"
+			},
+			{
+				"name": "fecha_lan_vid",
+				"type": "String"
+			},
+			{
+				"name": "imdb_url",
+				"type": "String"
+			}
+		]
+	}
+}

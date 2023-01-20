@@ -1,0 +1,24 @@
+{
+	"name": "salida_peliculas",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageClaseDF",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ClaseDF"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "peliculas.parquet",
+				"folderPath": "raw/peliculas",
+				"fileSystem": "clasedf"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
